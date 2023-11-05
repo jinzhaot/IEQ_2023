@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import os, time
 
 os.environ["TZ"] = "UTC"
-# time.tzset()
+time.tzset()
 st.set_page_config(layout='wide')
 
 @st.cache_data
