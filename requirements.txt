@@ -1,0 +1,5 @@
+matplotlib
+geopandas==0.10.2
+shapely
+click==8
+streamlit
