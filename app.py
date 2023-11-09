@@ -137,6 +137,7 @@ t = slider_placeholder.slider(
     min_value=datetime(2022, 1, 1, 0, 0),
     max_value=datetime(2023, 8, 31, 12, 0),
     step=timedelta(hours=1),
+    value=datetime(2023, 6, 8, 0, 0),
     format="YYYY/M/D - H:mm")
 
 mask = (gdf['Time Point'] == t)
