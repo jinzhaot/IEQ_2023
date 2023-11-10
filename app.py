@@ -40,8 +40,8 @@ def read_shpe(select_parm):
 
 
 # @st.cache(suppress_st_warning=True, allow_output_mutation=True)
-# @st.cache_data
-@st.cache_resource
+@st.cache_data
+# @st.cache_resource
 def read_cm(select_parm):
 
     # Create the Colormap for Temperature
