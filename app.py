@@ -222,13 +222,15 @@ if select_parm in ['Temperature', 'RH']:
     elif select_parm == 'Temperature':
         cbar.set_ticks([i for i in range(16, 32, 2)])
         cbar.ax.set_yticklabels(['16C(60.8F)',
-                                    r"$\bf{" + '18C(64.4F) lower bound' + "}$",
+                                    '18C(64.4F) lower bound',
                                     '20C(68.0F)',
                                     '22C(71.6F)',
-                                    r"$\bf{" + '24C(75.2F) upper bound' + "}$",
+                                    '24C(75.2F) upper bound',
                                     '26C(78.8F)',
                                     '28C(82.4F)',
                                     '30C(86.0F)'])
+        for index in [1, 4]:
+            ax.get_yticklabels()[index].set_weight('bold')
 
 
 
