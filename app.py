@@ -210,15 +210,17 @@ if select_parm in ['Temperature', 'RH']:
         cbar.set_ticks([i for i in range(0, 110, 10)])
         cbar.ax.set_yticklabels(['0',
                                     '10%',
-                                    r"$\bf{20}$%" + ' ' + r"$\bf{Acceptable}$",
+                                    '20% Acceptable',
                                     '30%',
-                                    r"$\bf{40}$%" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
+                                    '40% High Perf',
                                     '50%',
-                                    r"$\bf{60}$%" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
-                                    r"$\bf{70}$%" + ' ' + r"$\bf{Acceptable}$",
+                                    '60% High Perf',
+                                    '70% High Perf',
                                     '80%',
                                     '90%',
                                     '100%'])
+        for index in [2, 4, 6, 7]:
+            cbar.ax.get_yticklabels()[index].set_weight('bold')
     elif select_parm == 'Temperature':
         cbar.set_ticks([i for i in range(16, 32, 2)])
         cbar.ax.set_yticklabels(['16C(60.8F)',
@@ -296,11 +298,13 @@ else:
     elif select_parm == "CO2":
         cbar.set_ticks([400, 600, 800 ,1000, 1200, 1400])
         cbar.ax.set_yticklabels(['400ppm',
-                                    r"$\bf{600ppm}$" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
+                                    "600ppm High Perf",
                                     '800ppm',
-                                    r"$\bf{1000ppm}$" + ' ' + r"$\bf{Acceptable}$",
+                                    "1000ppm Acceptable",
                                     '1200ppm',
                                     '>1400ppm'])
+        for index in [1, 3]:
+            cbar.ax.get_yticklabels()[index].set_weight('bold')
 
     elif select_parm == 'PM10':
         cbar.set_ticks([50, 100, 150, 200, 250])
