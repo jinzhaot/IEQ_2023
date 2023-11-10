@@ -210,22 +210,22 @@ if select_parm in ['Temperature', 'RH']:
         cbar.set_ticks([i for i in range(0, 110, 10)])
         cbar.ax.set_yticklabels(['0',
                                     '10%',
-                                    r"$\bf{20}$%" + ' ' + r"$\bf{Acceptable}$",
+                                    r"$\textbf{20}$%" + ' ' + r"$\textbf{Acceptable}$",
                                     '30%',
-                                    r"$\bf{40}$%" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
+                                    r"$\textbf{40}$%" + ' ' + r"$\textbf{High}$" + ' ' + r"$\textbf{Perf}$",
                                     '50%',
-                                    r"$\bf{60}$%" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
-                                    r"$\bf{70}$%" + ' ' + r"$\bf{Acceptable}$",
+                                    r"$\textbf{60}$%" + ' ' + r"$\textbf{High}$" + ' ' + r"$\textbf{Perf}$",
+                                    r"$\textbf{70}$%" + ' ' + r"$\textbf{Acceptable}$",
                                     '80%',
                                     '90%',
                                     '100%'])
     elif select_parm == 'Temperature':
         cbar.set_ticks([i for i in range(16, 32, 2)])
         cbar.ax.set_yticklabels(['16C(60.8F)',
-                                    r"$\bf{" + '18C(64.4F) lower bound' + "}$",
+                                    r"$\textbf{" + '18C(64.4F) lower bound' + "}$",
                                     '20C(68.0F)',
                                     '22C(71.6F)',
-                                    r"$\bf{" + '24C(75.2F) upper bound' + "}$",
+                                    r"$\textbf{" + '24C(75.2F) upper bound' + "}$",
                                     '26C(78.8F)',
                                     '28C(82.4F)',
                                     '30C(86.0F)'])
@@ -282,9 +282,9 @@ else:
         cbar.ax.set_yticklabels(['<100ppb',
                                     '130ppb',
                                     '160ppb',
-                                    r"$\bf{176ppb}$" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
+                                    r"$\textbf{176ppb}$" + ' ' + r"$\textbf{High}$" + ' ' + r"$\textbf{Perf}$",
                                     '190ppb',
-                                    r"$\bf{220ppb}$" + ' ' + r"$\bf{Acceptable}$",
+                                    r"$\textbf{220ppb}$" + ' ' + r"$\textbf{Acceptable}$",
                                     '250ppb',
                                     '280ppb',
                                     '310ppb',
@@ -294,9 +294,9 @@ else:
     elif select_parm == "CO2":
         cbar.set_ticks([400, 600, 800 ,1000, 1200, 1400])
         cbar.ax.set_yticklabels(['400ppm',
-                                    r"$\bf{600ppm}$" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
+                                    r"$\textbf{600ppm}$" + ' ' + r"$\textbf{High}$" + ' ' + r"$\textbf{Perf}$",
                                     '800ppm',
-                                    r"$\bf{1000ppm}$" + ' ' + r"$\bf{Acceptable}$",
+                                    r"$\textbf{1000ppm}$" + ' ' + r"$\textbf{Acceptable}$",
                                     '1200ppm',
                                     '>1400ppm'])
 
