@@ -31,6 +31,7 @@ def read_shpe(select_parm):
     gdf = gpd.GeoDataFrame(tvoc_geo, geometry='geometry')
     bound = gpd.GeoSeries(Polygon(s['geometry'][25].coords))
     hollow = gpd.GeoSeries([Polygon(s['geometry'][26].coords), Polygon(s['geometry'][27].coords)])
+    gdf = gdf.loc[gdf['Time Point] > '2023-2-28']
     del s
     del tvoc
     del geo
@@ -134,7 +135,7 @@ cmap, norm = read_cm(select_parm)
 
 t = slider_placeholder.slider(
     label='Time',
-    min_value=datetime(2022, 1, 1, 0, 0),
+    min_value=datetime(2023, 3, 1, 0, 0),
     max_value=datetime(2023, 8, 31, 12, 0),
     step=timedelta(hours=1),
     value=datetime(2023, 6, 8, 0, 0),
