@@ -220,6 +220,7 @@ if select_parm in ['Temperature', 'RH']:
                                     '90%',
                                     '100%'])
     elif select_parm == 'Temperature':
+        cbar.set_ticks([i for i in range(16, 32, 2)])
         cbar.ax.set_yticklabels(['16C(60.8F)',
                                     r"$\bf{" + '18C(64.4F) lower bound' + "}$",
                                     '20C(68.0F)',
