@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import os, time
 
-mpl.use('Agg')
+# mpl.use('Agg')
 os.environ["TZ"] = "UTC"
 time.tzset()
 st.set_page_config(layout='wide')
