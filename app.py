@@ -14,7 +14,7 @@ st.set_page_config(layout='wide')
 @st.cache_data
 def read_shpe(select_parm):
     tvoc = pd.read_csv(select_parm + '.csv', parse_dates=['Time Point'],  dtype = {'value': float})
-    tvoc = tvoc.loc[tvoc['Time Point] > pd.to_datetime('2023-2-28')]
+    tvoc = tvoc.loc[tvoc['Time Point'] > pd.to_datetime('2023-02-28')]
     s = gpd.read_file('shp-line.shp')
     geo_list = [Polygon(x.coords) for x in reversed(s['geometry'])]
     geo_dict = {
