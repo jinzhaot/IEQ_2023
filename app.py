@@ -286,14 +286,16 @@ else:
         cbar.ax.set_yticklabels(['<100ppb',
                                     '130ppb',
                                     '160ppb',
-                                    r"$\bf{176ppb}$" + ' ' + r"$\bf{High}$" + ' ' + r"$\bf{Perf}$",
+                                    "176ppb High Perf",
                                     '190ppb',
-                                    r"$\bf{220ppb}$" + ' ' + r"$\bf{Acceptable}$",
+                                    "220ppb Acceptable",
                                     '250ppb',
                                     '280ppb',
                                     '310ppb',
                                     '340ppb',
                                     '>370ppb'])
+        for index in [3, 5]:
+            cbar.ax.get_yticklabels()[index].set_weight('bold')
 
     elif select_parm == "CO2":
         cbar.set_ticks([400, 600, 800 ,1000, 1200, 1400])
