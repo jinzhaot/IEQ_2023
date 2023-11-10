@@ -230,7 +230,7 @@ if select_parm in ['Temperature', 'RH']:
                                     '28C(82.4F)',
                                     '30C(86.0F)'])
         for index in [1, 4]:
-            ax.get_yticklabels()[index].set_weight('bold')
+            cbar.ax.get_yticklabels()[index].set_weight('bold')
 
 
 
